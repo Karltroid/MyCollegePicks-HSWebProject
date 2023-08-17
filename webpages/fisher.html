@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta info-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="A website that displays my top 3 picks for college." />
+		<meta name="keywords" content="College, fisher, University, Boston" />
+		<meta name="author" content="Karl Palmer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- stylesheets & scripts -->
+		<link rel="stylesheet" type="text/css" href="../styles/fisher/vars.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/fisher/main_styles.css" />
+		<link rel="stylesheet" type="text/css" media="(max-width: 1576px)" href="../styles/fisher/mobile_styles.css" />
+		<script src="../scripts/buttons.js"></script>
+		<script src="../scripts/video.js"></script>
+
+		<!-- site title & icon -->
+		<link rel="icon" type="image/x-icon" href="../images/meta/favicon.png" />
+		<title>College</title>
+	</head>
+	<body>
+		<header class="fisher-header">
+			<div id="header-content">
+				<img id="header-ico" src="../images/fisher/headerperson.png" />
+				<div id="header-text">
+					<h1>Fisher College</h1>
+					<p>A small private college located in Boston, Massachusetts with an emphasized vocational preparation.</p>
+					<div id="nav">
+						<img id="button-mypicks" onclick="opennav();" onmouseenter="changeimg('button-mypicks','../images/fisher/Button_Mypicks_hover.png');" onmouseleave="changeimg('button-mypicks', '../images/fisher/Button_Mypicks.png');"  src="../images/fisher/Button_Mypicks.png" />
+						<div id="my-picks">
+							<ul>
+								<a href="norwich.html"><li style="border-top: 2px var(--fisherBlue) solid;">Norwich University</li></a>
+								<a href="umass.html"><li>UMass Lowell</li></a>
+								<a href="fisher.html"><li>Fisher College</li></a>
+								<a href="../index.html"><li style="border-top: 1px var(--fisherDarkBlue) solid;">HOME</li></a>
+							</ul>
+						</div>
+					</div>
+					<div id="watch" onclick="openvideo('video-player');">
+						<img id="button-playvid" src="../images/fisher/play.png" />
+						<span id="playvid-text">WATCH "Fisher College: Be a Part of it All"</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
+
+		<div id="video-player">
+			<iframe id="video" width="16" height="9" src="https://www.youtube.com/embed/2KM6bl31LYc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<img id="vid" src="../images/fisher/button_GoBack.png" onclick="closevideo('video-player');" onmouseenter="changeimg('vid','../images/fisher/Button_GoBack_hover.png');" onmouseleave="changeimg('vid', '../images/fisher/Button_GoBack.png');" alt="Go Back" />
+		</div>
+
+		<div id="page-content">
+			<div class="section" id="one">
+				<img src="../images/fisher/data1.png" />
+				<div>
+					<h2>Closer it is,<br />The better it is.</h2>
+					<p>Fisher College is located in Boston, Massachusetts. I like cities so that's good for me!</p>
+				</div>
+			</div>
+
+			<div class="section left">
+				<div>
+					<h2>More people,<br />More experiences.</h2>
+					<p>The total undergraduate enrollment in Fisher College is 1,882 students.</p>
+				</div>
+				<img src="../images/fisher/data2.png" />
+			</div>
+		</div>
+
+		<div id="page-content">
+			<div class="section" id="three">
+				<img src="../images/fisher/data3.png" />
+				<div>
+					<h2>The more I spend,<br />The more :( I am.</h2>
+					<p>The tuition and fees for attending Fisher College is $31,384 + $15,926 room and board.</p>
+				</div>
+			</div>
+
+			<div class="section left">
+				<div>
+					<h2>Good courses,<br />Great future.</h2>
+					<p>Popular Majors: Business Management: 23%, Human Services: 22%, Criminal Justice/Corrections: 19%.</p>
+				</div>
+				<img src="../images/fisher/data4.png" />
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer-content">
+				<h1 id="footer-title">Learn more</h1>
+				<h2 id="footer-subtitle">Fisher College</h2>
+				<a href="https://www.fisher.edu/"><img id="button-contact-me" onmouseenter="changeimg('button-contact-me','../images/fisher/Button_ContactMe_hover.png');" onmouseleave="changeimg('button-contact-me', '../images/fisher/Button_ContactMe.png');" src="../images/fisher/Button_ContactMe.png" /></a>
+				<img id="profile-pic" src="../images/fisher/profile.jpg" />
+				<img id="right-border" src="../images/fisher/footer_rightbar.png" />
+				<div id="info">
+					<ul>
+						<li>118 Beacon St, Boston, MA 02116</li>
+						<li>Fisher.edu</li>
+						<li>617-236-8800</li>
+						<li>careers@fisher.edu</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,36 @@
+/*********
+* FONTS *
+*********/
+@font-face 
+{
+	font-family: product-sans-bold;
+	src: url('../../fonts/ProductSansBold.ttf');
+}
+@font-face 
+{
+	font-family: product-sans;
+	src: url('../../fonts/ProductSansRegular.ttf');
+}
+
+/*************
+* VARIABLES *
+*************/
+:root
+{
+	/* colors */
+	--fisherBlue: rgb(0, 68, 143);
+	--fisherDarkBlue: rgb(0, 55, 114);
+	--fisherYellow: rgb(246, 174, 0);
+	--fisherDarkYellow: rgb(221, 161, 18);
+	--norwichGreen: rgb(175, 177, 113);
+
+	/* paddings & margins */
+	--desktopPadding: 60px;
+	--mobilePadding: 42px;
+	--centerBlock: 0 auto;
+
+	/* box shadows */
+	--leftBoxShadow: -15px 15px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.20);
+	--rightBoxShadow: 15px 15px 20px rgba(0, 0, 0, 0.16), 0 6px 6px rgba(0, 0, 0, 0.20);
+	--centeredBoxShadow: 0 0px 10px rgba(0, 0, 0, 0.25);
+}

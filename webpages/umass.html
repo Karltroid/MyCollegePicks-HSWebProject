@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta info-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="A website that displays my top 3 picks for college." />
+		<meta name="keywords" content="College, umass, University, Boston" />
+		<meta name="author" content="Karl Palmer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- stylesheets & scripts -->
+		<link rel="stylesheet" type="text/css" href="../styles/umass/vars.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/umass/main_styles.css" />
+		<link rel="stylesheet" type="text/css" media="(max-width: 1576px)" href="../styles/umass/mobile_styles.css" />
+		<script src="../scripts/buttons.js"></script>
+		<script src="../scripts/video.js"></script>
+
+		<!-- site title & icon -->
+		<link rel="icon" type="image/x-icon" href="../images/meta/favicon.png" />
+		<title>College</title>
+	</head>
+	<body>
+		<header class="umass-header">
+			<div id="header-content">
+				<img id="header-ico" src="../images/umass/headerperson.png" />
+				<div id="header-text">
+					<h1>UMass Lowell</h1>
+					<p>A public research university, regionally accredited by the New England Association of Schools and Colleges since 1975.</p>
+					<div id="nav">
+						<img id="button-mypicks" onclick="opennav();" onmouseenter="changeimg('button-mypicks','../images/umass/Button_Mypicks_hover.png');" onmouseleave="changeimg('button-mypicks', '../images/umass/Button_Mypicks.png');"  src="../images/umass/Button_Mypicks.png" />
+						<div id="my-picks">
+							<ul>
+								<a href="norwich.html"><li style="border-top: 2px var(--umassGray) solid;">Norwich University</li></a>
+								<a href="umass.html"><li>UMass Lowell</li></a>
+								<a href="fisher.html"><li>Fisher College</li></a>
+								<a href="../index.html"><li style="border-top: 1px var(--umassGray) solid;">HOME</li></a>
+							</ul>
+						</div>
+					</div>
+					<div id="watch" onclick="openvideo('video-player');">
+						<img id="button-playvid" src="../images/umass/play.png" />
+						<span id="playvid-text">WATCH "UML Campus Aerials 2018"</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
+
+		<div id="video-player">
+			<iframe id="video" width="16" height="9" src="https://www.youtube.com/embed/f4uSkZw-QZA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<img id="vid" src="../images/umass/button_GoBack.png" onclick="closevideo('video-player');" onmouseenter="changeimg('vid','../images/umass/Button_GoBack_hover.png');" onmouseleave="changeimg('vid', '../images/umass/Button_GoBack.png');" alt="Go Back" />
+		</div>
+
+		<div id="page-content">
+			<div class="section" id="one">
+				<img src="../images/umass/data1.png" />
+				<div>
+					<h2>Closer it is,<br />The better it is.</h2>
+					<p>UMass is located in Lowell, Massachusetts. Not as close as boston but still pretty close!</p>
+				</div>
+			</div>
+
+			<div class="section left">
+				<div>
+					<h2>More people,<br />More experiences.</h2>
+					<p>The total undergraduate enrollment in UMass Lowell is 14,013 students. That's a whole lot of new connections to make!</p>
+				</div>
+				<img src="../images/umass/data2.png" />
+			</div>
+		</div>
+
+		<div id="page-content">
+			<div class="section" id="three">
+				<img src="../images/umass/data3.png" />
+				<div>
+					<h2>The more I spend,<br />The more :( I am.</h2>
+					<p>The tuition and fees for attending Fisher College is $15,180(in-state) or $32,827(out-of-state), not bad!</p>
+				</div>
+			</div>
+
+			<div class="section left">
+				<div>
+					<h2>Good courses,<br />Great future.</h2>
+					<p>Popular Majors: Business (485 grads), Criminal Justice & Law Enforcement (276 grads), Information Science (262 grads).</p>
+				</div>
+				<img src="../images/umass/data4.png" />
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer-content">
+				<h1 id="footer-title">Learn more</h1>
+				<h2 id="footer-subtitle">UMass Lowell</h2>
+				<a href="https://www.uml.edu/"><img id="button-contact-me" onmouseenter="changeimg('button-contact-me','../images/umass/Button_ContactMe_hover.png');" onmouseleave="changeimg('button-contact-me', '../images/umass/Button_ContactMe.png');" src="../images/umass/Button_ContactMe.png" /></a>
+				<img id="profile-pic" src="../images/umass/profile.jpg" />
+				<img id="right-border" src="../images/umass/footer_rightbar.png" />
+				<div id="info">
+					<ul>
+						<li>1220 Pawtucket St., Suite 420, Lowell, MA 01854-5107</li>
+						<li>uml.edu</li>
+						<li>978-934-3700</li>
+						<li>enrollment_management@uml.edu</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

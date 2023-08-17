@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta info-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="A website that displays my top 3 picks for college." />
+		<meta name="keywords" content="College, Norwich, University, Vermont" />
+		<meta name="author" content="Karl Palmer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- stylesheets & scripts -->
+		<link rel="stylesheet" type="text/css" href="../styles/norwich/vars.css" />
+		<link rel="stylesheet" type="text/css" href="../styles/norwich/main_styles.css" />
+		<link rel="stylesheet" type="text/css" media="(max-width: 1576px)" href="../styles/norwich/mobile_styles.css" />
+		<script src="../scripts/buttons.js"></script>
+		<script src="../scripts/video.js"></script>
+
+		<!-- site title & icon -->
+		<link rel="icon" type="image/x-icon" href="../images/meta/favicon.png" />
+		<title>College</title>
+	</head>
+	<body>
+		<header class="norwich-header">
+			<div id="header-content">
+				<img id="header-ico" src="../images/norwich/headerperson.png" />
+				<div id="header-text">
+					<h1>Norwich University</h1>
+					<p>The Military College of Vermont is a private university in Northfield, Vermont, the oldest private military college in the United States.</p>
+					<div id="nav">
+						<img id="button-mypicks" onclick="opennav();" onmouseenter="changeimg('button-mypicks','../images/norwich/Button_Mypicks_hover.png');" onmouseleave="changeimg('button-mypicks', '../images/norwich/Button_Mypicks.png');"  src="../images/norwich/Button_Mypicks.png" />
+						<div id="my-picks">
+							<ul>
+								<a href="norwich.html"><li style="border-top: 2px var(--norwichRed) solid;">Norwich University</li></a>
+								<a href="umass.html"><li>UMass Lowell</li></a>
+								<a href="fisher.html"><li>Fisher College</li></a>
+								<a href="../index.html"><li style="border-top: 1px var(--norwichDarkRed) solid;">HOME</li></a>
+							</ul>
+						</div>
+					</div>
+					<div id="watch" onclick="openvideo('video-player');">
+						<img id="button-playvid" src="../images/norwich/play.png" />
+						<span id="playvid-text">WATCH "Norwich University Opener"</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
+
+		<div id="video-player">
+			<iframe id="video" width="16" height="9" src="https://www.youtube.com/embed/WHzMxjyhqSo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<img id="vid" src="../images/norwich/button_GoBack.png" onclick="closevideo('video-player');" onmouseenter="changeimg('vid','../images/norwich/Button_GoBack_hover.png');" onmouseleave="changeimg('vid', '../images/index/Button_GoBack.png');" alt="Go Back" />
+		</div>
+
+		<div id="page-content">
+			<div class="section" id="one">
+				<img src="../images/norwich/data1.png" />
+				<div>
+					<h2>Closer it is,<br />The better it is.</h2>
+					<p>Norwich Unviersity is located in Northfield, Vermont. May be cold but that's fine.</p>
+				</div>
+			</div>
+
+			<div class="section left">
+				<div>
+					<h2>More people,<br />More experiences.</h2>
+					<p>The total undergraduate enrollment in Norwich University is 3,225 students.</p>
+				</div>
+				<img src="../images/norwich/data2.png" />
+			</div>
+		</div>
+
+		<div id="page-content">
+			<div class="section" id="three">
+				<img src="../images/norwich/data3.png" />
+				<div>
+					<h2>The more I spend,<br />The more :( I am.</h2>
+					<p>The tuition and fees for attending Norwich University is $40,016.</p>
+				</div>
+			</div>
+
+			<div class="section left">
+				<div>
+					<h2>Good courses,<br />Great future.</h2>
+					<p>Enrollment: Military Science: 22%, Homeland Security: 18%, Business/Marketing Services: 13%.</p>
+				</div>
+				<img src="../images/norwich/data4.png" />
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer-content">
+				<h1 id="footer-title">Learn more</h1>
+				<h2 id="footer-subtitle">Norwich University</h2>
+				<a href="http://norwich.edu"><img id="button-contact-me" onmouseenter="changeimg('button-contact-me','../images/norwich/Button_ContactMe_hover.png');" onmouseleave="changeimg('button-contact-me', '../images/norwich/Button_ContactMe.png');" src="../images/norwich/Button_ContactMe.png" /></a>
+				<img id="profile-pic" src="../images/norwich/profile.jpg" />
+				<img id="right-border" src="../images/norwich/footer_rightbar.png" />
+				<div id="info">
+					<ul>
+						<li>158 Harmon Dr, Northfield, VT 05663</li>
+						<li>norwich.edu</li>
+						<li>866-684-7237</li>
+						<li>learn@norwich.edu</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>

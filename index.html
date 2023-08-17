@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- meta info-->
+		<meta charset="UTF-8" />
+		<meta name="description" content="A website that displays my top 3 picks for college." />
+		<meta name="keywords" content="College, Norwich, University, Vermont" />
+		<meta name="author" content="Karl Palmer" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- stylesheets & scripts -->
+		<link rel="stylesheet" type="text/css" href="styles/vars.css" />
+		<link rel="stylesheet" type="text/css" href="styles/main_styles.css" />
+		<link rel="stylesheet" type="text/css" media="(max-width: 1576px)" href="styles/mobile_styles.css" />
+		<script src="scripts/buttons.js"></script>
+		<script src="scripts/video.js"></script>
+
+		<!-- site title & icon -->
+		<link rel="icon" type="image/x-icon" href="images/meta/favicon.png" />
+		<title>College</title>
+	</head>
+	<body>
+		<header>
+			<div id="header-content">
+				<img id="header-ico" src="images/index/headerpeople.png" />
+				<div id="header-text">
+					<h1>College. The next step.</h1>
+					<p>After all these years of learning and finding ourselves, it is time to go on and persue what we love.</p>
+					<div id="nav">
+						<img id="button-mypicks" onclick="opennav();" onmouseenter="changeimg('button-mypicks','images/index/Button_Mypicks_hover.png');" onmouseleave="changeimg('button-mypicks', 'images/index/Button_Mypicks.png');"  src="images/index/Button_Mypicks.png" />
+						<div id="my-picks">
+							<ul>
+								<a href="webpages/norwich.html"><li style="border-top: 2px var(--indexYellow) solid;">Norwich University</li></a>
+								<a href="webpages/umass.html"><li>UMass Lowell</li></a>
+								<a href="webpages/fisher.html"><li>Fisher College</li></a>
+								<a href="index.html"><li style="border-top: 1px var(--indexDarkBlue) solid;">HOME</li></a>
+							</ul>
+						</div>
+					</div>
+					<div id="watch" onclick="openvideo('video-player');">
+						<img id="button-playvid" src="images/index/play.png" />
+						<span id="playvid-text">WATCH "IS COLLEGE WORTH IT?"</span>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		
+
+		<div id="video-player">
+			<iframe id="video" width="16" height="9" src="https://www.youtube.com/embed/Ad_gVhBOGzI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<img id="vid" src="images/index/button_GoBack.png" onclick="closevideo('video-player');" onmouseenter="changeimg('vid','images/index/Button_GoBack_hover.png');" onmouseleave="changeimg('vid', 'images/index/Button_GoBack.png');" alt="Go Back" />
+		</div>
+
+		<div id="page-content">
+			<div class="section" id="one">
+				<img src="images/index/data1.png" />
+				<div>
+					<h2>More education,<br />More earnings.</h2>
+					<p>This graph shows the average lifetime earnings of different graduate levels.</p>
+				</div>
+			</div>
+
+			<div class="section" id="two">
+				<div>
+					<h2>New people,<br />New life lessons.</h2>
+					<p>In college you will create long lasting friendships, broaden your horizons, and foster a period of self-discovery/growth.</p>
+				</div>
+				<img src="images/index/data2.png" />
+			</div>
+		</div>
+
+		<footer>
+			<div id="footer-content">
+				<h1 id="footer-title">Created By</h1>
+				<h2 id="footer-subtitle">Karl Palmer</h2>
+				<a href="mailto:KarltroidContact@Gmail.com"><img id="button-contact-me" onmouseenter="changeimg('button-contact-me','images/index/Button_ContactMe_hover.png');" onmouseleave="changeimg('button-contact-me', 'images/index/Button_ContactMe.png');" src="images/index/Button_ContactMe.png" /></a>
+				<img id="profile-pic" src="images/index/profile_pic.jpg" />
+				<img id="right-border" src="images/index/footer_rightbar.png" />
+				<div id="info">
+					<ul>
+						<li>KarltroidContact@Gmail.com</li>
+						<li>not-myr-eal#</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+		
+	</body>
+</html>
